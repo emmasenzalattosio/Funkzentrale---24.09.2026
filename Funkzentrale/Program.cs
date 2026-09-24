@@ -30,6 +30,11 @@
 
             Console.WriteLine();
             Console.WriteLine();
+
+
+
+
+
             Agent falke = new Agent("Falke", Chiffren.Ruckwaerts);
             Agent nachtigall = new Agent("Nachtigall", Chiffren.Ruckwaerts);
 

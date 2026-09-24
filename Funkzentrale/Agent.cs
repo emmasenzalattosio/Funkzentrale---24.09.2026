@@ -8,7 +8,7 @@ namespace Funkzentrale
     {
         private string _codename;
 
-        public Agent(string codename, ChiffrierVerfahren chiff, ) => _codename = codename;
+        public Agent(string codename, ChiffrierVerfahren chiff, Sicherheitspruefung prufung) => _codename = codename;
 
         public Agent() { }
 
