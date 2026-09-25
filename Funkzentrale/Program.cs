@@ -32,14 +32,24 @@
             Console.WriteLine();
 
 
+            Agent falke = new Agent("Falke", Chiffren.Ruckwaerts, Sicherheit.NichtZuLang);
+
+            falke.Melden("Alles ruhig ");
+            falke.Melden("Das Paket liegt hinter der Tuer");
 
 
+            Console.WriteLine();
+            Console.WriteLine();
 
-            Agent falke = new Agent("Falke", Chiffren.Ruckwaerts);
-            Agent nachtigall = new Agent("Nachtigall", Chiffren.Ruckwaerts);
+            Agent nachtigall = new Agent("Nachtigall", Chiffren.Ruckwaerts, Sicherheit.KeinKlarname);
+            nachtigall.Melden("Ankuft heute");
+            nachtigall.Melden("Ankunft in Moskau");
+            
 
-            falke.Melden("Der Kurier ist unterwegs");
-            nachtigall.Melden("Treffen um acht");
+            Console.WriteLine();
+            Console.WriteLine();
+
+        
 
             Zentrale.Senden("Falke", "Der Kurier ist unterwegs", Chiffren.Ruckwaerts);
 

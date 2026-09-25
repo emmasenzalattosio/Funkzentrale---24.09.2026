@@ -6,10 +6,10 @@ namespace Funkzentrale
 {
     public class Sicherheit
     {
-        public static bool NichtZuLang(int zeichnen)
+        public static bool NichtZuLang(string zeichnen)
         {
 
-            if (zeichnen <= 20)
+            if (zeichnen.Length <= 20)
             {
                 Console.WriteLine("Your message has max 20 characters!!");
                 return true;
@@ -24,17 +24,22 @@ namespace Funkzentrale
         }
         public static bool KeinKlarname(string text)
         {
-            if (text != "Moskau")
+            if (text.Contains("Moskau"))
             {
-                Console.WriteLine("The text doesn´t have the word Moskau");#
-                return true;
+                Console.WriteLine("Oppala!! The text has Moskau in it");
+                return false;
+                
             }
 
             else
             {
-                Console.WriteLine("Oppala!! The text has Moskau in it");
-                return false;
+                Console.WriteLine("The text doesn´t have the word Moskau");
+                return true;
+
             }
+
+            //text.Contains("Moskau");
+            //return true;
 
 
         }
